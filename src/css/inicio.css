@@ -1,0 +1,36 @@
+.conteiner {
+    height:537px
+}
+
+#root {
+
+    background-color: rgb(199, 18, 18);
+    margin-bottom: 0px;
+
+}
+
+.titulo {
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border: solid;
+    text-align: center;
+    color: black;
+    font-family: serif;
+    background-color: red;
+
+}
+
+.boton1 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+
+}
+
+.img {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
