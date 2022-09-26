@@ -21,6 +21,7 @@ body {
     border-radius: 50px;
     margin-left: 780px; 
     
+    
 
 }
 
@@ -89,4 +90,8 @@ p {
 }
 .fondo{
     background-image: url(../imagenes/fondo.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
