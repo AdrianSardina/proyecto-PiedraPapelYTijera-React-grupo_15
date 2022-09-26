@@ -19,7 +19,9 @@ class Inicio extends React.Component {
 
 
                     <div className="boton1">
+
                         <Link to="/juego"  >
+
                         <Spinner animation="grow" variant="light" />
                             <Button variant="secondary"  size="lg" active>
                                 Empezar a Jugar
