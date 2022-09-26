@@ -67,8 +67,8 @@ export default function Juego()
         <Row className="justify-content-xl-center"style={{ backgroundColor:"#C9F2F2" }}  >
            
         <Col md={{ span: 1, offset: 4 }}> <Button variant="success" size="lg" onClick={jugarRonda}>Jugar</Button>      </Col>    
-        {/* <Col> <Link to="/">  <Button variant="secondary"  size="lg" >Volver a inicio</Button> </Link>   </Col> */}
-        <Col >  <Button variant="danger"  size="lg" >Volver a inicio</Button>          </Col>
+         <Col> <Link to="/">  <Button variant="danger"   size="lg" >Volver a inicio</Button> </Link>   </Col> 
+        
         </Row>
         
         </>
