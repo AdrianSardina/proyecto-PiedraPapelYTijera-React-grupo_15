@@ -7,7 +7,7 @@ class Nosotros extends React.Component {
             <div >
                 <body className="fondo">
 
-                    <header className="content header">
+                    <header className="header">
 
                         <h1 className="title">Contacto</h1>
 
