@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Masjuegos from "./Componentes/MasJuegos";
 import NotFound from "./Componentes/NotFound";
 import './css/estiloLG.css';
+import Nosotros from "./Componentes/Nosotros";
+import './css/estiloNR.css'
 
 export default function Game()
 {
@@ -14,7 +16,7 @@ export default function Game()
         <Routes>
         <Route path="/" />;
         <Route path="/juego" />;
-        <Route path="/nosotros" />;
+        <Route path="/nosotros" element= {<Nosotros/>} />;
             <Route path="/masjuegos" element={<Masjuegos/>} />;
             <Route path="*" element={<NotFound/>} />;
         </Routes>
