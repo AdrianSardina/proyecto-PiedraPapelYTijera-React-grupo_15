@@ -1,0 +1,22 @@
+.nofun{
+    text-align: center;
+    color:white;
+    background-image: url(../imagenes/Error.jpg);
+    height: 1000px;
+    width: 100%;
+    line-height: 1000px;
+    
+    
+}
+.botones {
+    background-image: url(../imagenes/fondoBotones.png);
+    background-position: 50% 50%;
+}
+.masJuegos{
+    text-align: center;
+    background-image:url(../imagenes/trabajando.jpg) ;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
