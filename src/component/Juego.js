@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Row ,Col, Button} from "react-bootstrap";
+import { Row ,Col, Button, Container} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import {Link} from 'react-router-dom';
 
 export default function Juego()
 {
@@ -37,17 +38,19 @@ export default function Juego()
     const [resultado,setResultado] = useState ("Comenzar a jugar");
     return(
         <>
-        <Row className="justify-content-xl-center"  >
+        <br></br>
+        <Row className="justify-content-xl-center" style={{ backgroundColor:"#C9F7F7" }} >
             <Col xs={4}>
             <Card border='dark' style={{ width: '60%' }}>
             <Card.Header><h2>Jugador 1</h2></Card.Header>
             <Card.Img variant="top" src={imagenes[opcion1]} />
             <Card.Body>
-            <h1> Puntos:  {puntos1}</h1>
+            <h1 > Puntos:  {puntos1}</h1>
             </Card.Body>
              </Card>
             </Col>
-            <Col xs={2}> <h3> {resultado}  </h3>  </Col>
+            <br></br>
+            <Col  className="justify-content-xl-center" md={{ span: 3}}> <h3 style={{border:"solid"}}> {resultado}  </h3>  </Col>
             <Col  xs={4} >
             
             <Card border='dark' style={{ width: '60%' }}>
@@ -60,9 +63,14 @@ export default function Juego()
         </Col>
         
         </Row>
+        <br></br>
+        <Row className="justify-content-xl-center"style={{ backgroundColor:"#C9F2F2" }}  >
+           
+        <Col md={{ span: 1, offset: 4 }}> <Button variant="success" size="lg" onClick={jugarRonda}>Jugar</Button>      </Col>    
+        {/* <Col> <Link to="/">  <Button variant="secondary"  size="lg" >Volver a inicio</Button> </Link>   </Col> */}
+        <Col >  <Button variant="danger"  size="lg" >Volver a inicio</Button>          </Col>
+        </Row>
         
-        
-        <Button variant="secondary" onClick={jugarRonda}>jugar</Button>
         </>
     )
 }

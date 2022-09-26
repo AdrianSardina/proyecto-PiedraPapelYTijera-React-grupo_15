@@ -1,8 +1,9 @@
+import Juego from './component/Juego';
 export default function Game()
 {
     return(
         <>
-        <h1>hola</h1>
+        <Juego ></Juego>
         </>
         
     )
