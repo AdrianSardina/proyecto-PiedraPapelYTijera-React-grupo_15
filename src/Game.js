@@ -6,6 +6,8 @@ import NotFound from "./Componentes/NotFound";
 import './css/estiloLG.css';
 import Nosotros from "./Componentes/Nosotros";
 import './css/estiloNR.css'
+import Juego from './Componentes/Juego'
+import Inicio from "./Componentes/Inicio";
 
 export default function Game()
 {
@@ -14,8 +16,8 @@ export default function Game()
         <Boton></Boton>
         <BrowserRouter>
         <Routes>
-        <Route path="/" />;
-        <Route path="/juego" />;
+        <Route path="/" element={<Inicio/>}/>;
+        <Route path="/juego" element={<Juego/>} />;
         <Route path="/nosotros" element= {<Nosotros/>} />;
             <Route path="/masjuegos" element={<Masjuegos/>} />;
             <Route path="*" element={<NotFound/>} />;
