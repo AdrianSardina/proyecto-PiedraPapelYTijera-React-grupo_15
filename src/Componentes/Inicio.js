@@ -8,6 +8,7 @@ import Spinner from 'react-bootstrap/Spinner';
 
 function Inicio()  {
 
+
         return (
 
             <>
@@ -19,7 +20,9 @@ function Inicio()  {
 
 
                     <div className="boton1">
+
                         <Link to="/juego"  >
+
                         <Spinner animation="grow" variant="light" />
                             <Button variant="secondary"  size="lg" active>
                                 Empezar a Jugar
@@ -36,6 +39,7 @@ function Inicio()  {
             </>
 
         )
-    
+ 
+
 }
 export default Inicio
