@@ -6,8 +6,9 @@ import inicio from '../css/inicio.css';
 import Spinner from 'react-bootstrap/Spinner';
 
 
-class Inicio extends React.Component {
-    render() {
+function Inicio()  {
+
+
         return (
 
             <>
@@ -38,6 +39,7 @@ class Inicio extends React.Component {
             </>
 
         )
-    }
+ 
+
 }
 export default Inicio
